@@ -1,0 +1,11 @@
+defaultTasks 'tugas' // tanpa tanda petik akan error
+
+task tugaslain {}
+
+task tugas {
+    doLast {
+        tasks.each {
+            println "Task name is ${it.name}"
+        }
+    }
+}

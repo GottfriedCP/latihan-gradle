@@ -1,0 +1,6 @@
+// contoh ini tidak menyimpan direktori kerja ke variabel buildDir
+// karena kemungkinan error jika di-share di repo git
+task salinDok(type: Copy) {
+    from 'dokumen/kosong.pdf'
+    into 'dokumen_bak/'
+}

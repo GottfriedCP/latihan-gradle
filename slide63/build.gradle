@@ -1,0 +1,5 @@
+// mirip seperti contoh di slide 62
+task salinDok(type: Copy) {
+    from 'dokumen/kosong.pdf', 'dokumen/kosong_juga.pdf'
+    into 'dokumen_bak/'
+}

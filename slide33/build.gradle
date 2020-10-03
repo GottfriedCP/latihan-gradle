@@ -1,0 +1,14 @@
+task hello {
+    doLast {
+        print "hello, "
+    }
+}
+
+task world(dependsOn:hello) {
+    doLast {
+        println "world"
+    }
+}
+
+// task ini dijalankan dengan parameter tambahan --profile
+// lihat direktori build

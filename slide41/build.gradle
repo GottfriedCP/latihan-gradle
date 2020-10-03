@@ -1,0 +1,18 @@
+// sama dengan slide 40, hanya menambahkan dependsOn
+
+task upperCase(dependsOn:'counting') {
+    doLast {
+        def teks = "kecil"
+        println "teks asli: " + teks
+        println "teks uppercase: " + teks.toUpperCase()
+    }
+}
+
+task counting {
+    doLast {
+        6.times{
+            print "$it "
+        }
+        println " "
+    }
+}

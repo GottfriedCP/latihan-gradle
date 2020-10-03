@@ -1,0 +1,17 @@
+// berbagai variasi dependsOn
+task setupConn {
+    println "setting up conn"
+}
+
+task connectDB {
+    dependsOn 'setupConn'
+}
+
+task extractData {
+    dependsOn connectDB
+    println "data has been extracted"
+}
+
+task closeConn {
+    dependsOn << extractData
+}

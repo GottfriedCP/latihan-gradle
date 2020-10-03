@@ -1,0 +1,5 @@
+task salinDok(type: Copy) {
+    from 'dokumen'
+    include '**/*.pdf'
+    into 'dokumen_bak'
+}

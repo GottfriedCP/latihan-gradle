@@ -1,0 +1,11 @@
+9.times { index ->
+    // nama task yang valid: task1 hingga task8
+    task "task$index" {
+        doLast {
+            println "task nomor-$index"
+        }
+    }
+}
+
+// sama dengan slide 42, hanya menambahkan dependsOn
+task0.dependsOn task1, task3, task5

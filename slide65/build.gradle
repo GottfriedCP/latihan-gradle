@@ -1,0 +1,6 @@
+task salinDir(type: Copy) {
+    from('dokumen') {
+        include 'laporan/**'
+    }
+    into 'arsip'
+}

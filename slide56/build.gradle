@@ -1,0 +1,17 @@
+task tugas {
+    doLast {
+        println "langkah terakhir"
+    }
+}
+
+tugas {
+    // sama dengan slide 55, menambahkan dua doLast lagi
+    doLast { println "eits masih ada lagi..." }
+    doLast { println "ini yang terakhir, mungkin loh ya hehe" }
+}
+
+tugas {
+    doFirst { println "langkah kedua" }
+    // doFirst terakhir akan dijalankan terlebih dahulu
+    doFirst { println "langkah pertama" }
+}

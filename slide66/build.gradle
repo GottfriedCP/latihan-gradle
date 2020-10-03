@@ -1,0 +1,7 @@
+// menggunakan apache ant utk memindahkan file
+// direktori awal juga disertakan di repo
+task moveDir {
+    doLast {
+        ant.move file: 'dokumen', todir: 'arsip'
+    }
+}

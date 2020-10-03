@@ -1,0 +1,8 @@
+9.times { index ->
+    // nama task yang valid: task1 hingga task8
+    task "task$index" {
+        doLast {
+            println "task nomor-$index"
+        }
+    }
+}

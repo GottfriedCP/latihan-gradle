@@ -1,0 +1,14 @@
+// meringkas slide 50 dependsOn
+task setupConn {
+    println "setting up conn"
+}
+
+task connectDB
+connectDB.dependsOn.setupConn
+
+task extractData {
+    dependsOn connectDB
+    println "data has been extracted"
+}
+
+task closeConn(dependsOn:'extractData')

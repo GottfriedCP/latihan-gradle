@@ -1,0 +1,12 @@
+// sengaja di comment karena sudah berhasil
+//task hapusDok(type: Delete) {
+//    delete 'dokumen'
+//}
+
+task hapusDocx(type: Delete) {
+    delete fileTree('dokumen').matching {
+        include '**/*.docx'
+    }
+}
+
+// NOTE: filenya saya lampirkan kembali supaya bisa di run

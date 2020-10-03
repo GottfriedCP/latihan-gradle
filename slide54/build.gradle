@@ -1,0 +1,13 @@
+task tugas
+
+tugas {
+    doLast {
+        println "langkah terakhir"
+    }
+}
+
+tugas {
+    doFirst {
+        println "langkah pertama"
+    }
+}

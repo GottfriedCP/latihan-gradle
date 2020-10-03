@@ -1,0 +1,11 @@
+task tugas {
+    doLast {
+        println "langkah terakhir"
+    }
+}
+
+tugas {
+    doFirst { println "langkah kedua" }
+    // doFirst terakhir akan dijalankan terlebih dahulu
+    doFirst { println "langkah pertama" }
+}

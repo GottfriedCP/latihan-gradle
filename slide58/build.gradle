@@ -1,0 +1,14 @@
+task ambilMetadata {
+    doLast {
+        println "mengambil metadata..."
+    }
+}
+
+ambilMetadata.onlyIf {
+    // tambahkan parameter -D extract.metadata = true
+    System.properties['extract.metadata'] == 'true'
+}
+
+task aksesDB(dependsOn:'ambilMetadata') {
+    println "mengakses DB..."
+}

@@ -1,0 +1,16 @@
+task upperCase {
+    doLast {
+        def teks = "kecil"
+        println "teks asli: " + teks
+        println "teks uppercase: " + teks.toUpperCase()
+    }
+}
+
+task counting {
+    doLast {
+        6.times{
+            print "$it "
+        }
+        println " "
+    }
+}

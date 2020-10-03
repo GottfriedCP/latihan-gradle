@@ -1,0 +1,19 @@
+task langkah
+
+langkah {
+    doLast {
+        println "langkah pertama"
+    }
+}
+
+langkah {
+    doLast {
+        println "langkah kedua"
+    }
+}
+
+langkah {
+    doLast {
+        println "langkah ketiga"
+    }
+}
